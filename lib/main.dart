@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_ui/controllers/theme_controller.dart';
+import 'package:ecommerce_app_ui/utils/app_themes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -15,13 +16,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeController = Get.find<ThemeController>();
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'Fashion Store',
+      theme: AppThemes.light,
+      darkTheme: AppThemes.dark,
+      themeMode: themeController.theme,
+      defaultTransition: Transition.fade,
+
       // home: const MyHomePage(title: 'AI Chat Bot'),
     );
   }
