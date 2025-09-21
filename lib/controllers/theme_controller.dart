@@ -7,7 +7,7 @@ class ThemeController extends GetxController {
 
   final _key = 'isDarkMode';
 
-  ThemeMode get theme => _loadTheme()? ThemeMode.dark : ThemeMode.light;
+  ThemeMode get theme => _loadTheme() ? ThemeMode.dark : ThemeMode.light;
   bool get isDarkMode => _loadTheme();
 
   bool _loadTheme() => _box.read(_key) ?? false;
@@ -15,10 +15,10 @@ class ThemeController extends GetxController {
   void saveTheme(bool isDarkMode) => _box.write(_key, isDarkMode);
 
   void toggleTheme() {
-      Future.delayed(const Duration(milliseconds: 50), () {
-        Get.changeThemeMode(_loadTheme()? ThemeMode.light : ThemeMode.dark);
-        saveTheme(!_loadTheme());
-        update();
-      });
+    Future.delayed(const Duration(milliseconds: 50), () {
+      Get.changeThemeMode(_loadTheme() ? ThemeMode.light : ThemeMode.dark);
+      saveTheme(!_loadTheme());
+      update();
+    });
   }
 }

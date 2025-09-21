@@ -7,13 +7,13 @@ class AppTextStyle {
     fontSize: 32,
     fontWeight: FontWeight.w700,
     height: 1.2,
-    letterSpacing: -0.5
+    letterSpacing: -0.5,
   );
   static TextStyle h2 = GoogleFonts.poppins(
-      fontSize: 24,
-      fontWeight: FontWeight.w600,
-      // height: 1.2,
-      letterSpacing: -0.5
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+    // height: 1.2,
+    letterSpacing: -0.5,
   );
 
   static TextStyle h3 = GoogleFonts.poppins(
@@ -33,9 +33,9 @@ class AppTextStyle {
   );
 
   static TextStyle bodyMedium = GoogleFonts.poppins(
-      fontSize: 15,
-      fontWeight: FontWeight.w400,
-      letterSpacing: 0.2
+    fontSize: 15,
+    fontWeight: FontWeight.w400,
+    letterSpacing: 0.2,
     // height: 1.2,
   );
 
@@ -48,23 +48,22 @@ class AppTextStyle {
 
   // button text
 
-
   static TextStyle buttonLarge = GoogleFonts.poppins(
     fontSize: 16,
     fontWeight: FontWeight.w600,
-    letterSpacing: 0.5
+    letterSpacing: 0.5,
   );
 
   static TextStyle buttonMedium = GoogleFonts.poppins(
-      fontSize: 15,
-      fontWeight: FontWeight.w600,
-      // letterSpacing: 0.2
+    fontSize: 15,
+    fontWeight: FontWeight.w600,
+    // letterSpacing: 0.2
   );
 
   static TextStyle buttonSmall = GoogleFonts.poppins(
-      fontSize: 14,
-      fontWeight: FontWeight.w500,
-      // letterSpacing: 0.2
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    // letterSpacing: 0.2
   );
 
   // label text
@@ -85,5 +84,4 @@ class AppTextStyle {
   static TextStyle withWeight(TextStyle style, FontWeight weight) {
     return style.copyWith(fontWeight: weight);
   }
-
 }
