@@ -1,5 +1,6 @@
 import 'package:ecommerce_app_ui/controllers/theme_controller.dart';
 import 'package:ecommerce_app_ui/utils/app_themes.dart';
+import 'package:ecommerce_app_ui/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       themeMode: themeController.theme,
       defaultTransition: Transition.fade,
 
-      // home: const MyHomePage(title: 'AI Chat Bot'),
+      home: const SplashScreen(),
     );
   }
 }
