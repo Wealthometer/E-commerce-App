@@ -18,7 +18,26 @@ class SplashScreen extends StatelessWidget {
             ]
           )
         ),
+        child: Stack(
+          children: [
+            Positioned.fill(
+                child: Opacity(
+                  opacity: 0.05,
+                  child: GridPattern(),
+                )
+            )
+          ],
+        ),
       )
     );
+  }
+}
+
+class GridPattern extends StatelessWidget {
+  const GridPattern({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
