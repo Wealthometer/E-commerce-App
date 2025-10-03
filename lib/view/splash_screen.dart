@@ -20,13 +20,50 @@ class SplashScreen extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            Positioned.fill(
+            const Positioned.fill(
                 child: Opacity(
                   opacity: 0.05,
                   child: GridPattern(
                     color: Colors.white
                   ),
-                )
+                ),
+            ),
+
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  TweenAnimationBuilder<double>(
+                      tween: Tween(begin: 0.0, end: 1.0),
+                      duration: const Duration(milliseconds: 1200),
+                      builder: (context, value, child){
+                        return Transform.scale(
+                          scale: value,
+                          child: Container(
+                            padding: const EdgeInsets.all(24),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.circle,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.1),
+                                  blurRadius: 20,
+                                  spreadRadius: 2,
+                                  offset: const Offset(0, 4)
+                                )
+                              ]
+                            ),
+                            child: Icon(
+                              Icons.shopping_bag_outlined,
+                              size: 83,
+                              color: Theme.of(context).primaryColor,
+                            ),
+                          ),
+                        );
+                      }
+                  )
+                ],
+              ),
             )
           ],
         ),
