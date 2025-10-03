@@ -55,13 +55,73 @@ class SplashScreen extends StatelessWidget {
                             ),
                             child: Icon(
                               Icons.shopping_bag_outlined,
-                              size: 83,
+                              size: 48,
                               color: Theme.of(context).primaryColor,
                             ),
                           ),
                         );
                       }
-                  )
+                  ),
+
+                  const SizedBox(
+                    height: 32,
+                  ),
+
+                  //Animated Text
+                  TweenAnimationBuilder<double>(
+                      tween: Tween(begin: 0.0, end: 1.0),
+                      duration: const Duration(milliseconds: 1200),
+                      builder: (context, value, child){
+                        return Opacity(
+                          opacity: value,
+                          child: Transform.translate(
+                            offset: Offset(0, 20 * (1 - value)),
+                            child: child,
+                          ),
+                        );
+                      },
+
+                      child: Column(
+                        children: [
+                          Text(
+                            "Fashion",
+                            style: TextStyle(
+                              color: Colors.white.withOpacity(0.7),
+                              fontSize: 32,
+                              fontWeight: FontWeight.w300,
+                              letterSpacing: 8,
+                              // decoration: TextDecoration.underline,
+                              shadows: [
+                                Shadow(
+                                  offset: Offset(2, 2),
+                                  blurRadius: 4,
+                                  color: Colors.black45,
+                                ),
+                              ],
+
+                            ),
+                          ),
+
+                          Text(
+                            "¡STORE!",
+                            style: TextStyle(
+                                color: Colors.white.withOpacity(0.98),
+                                fontSize: 35,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: 4,
+                              shadows: [
+                                Shadow(
+                                  offset: Offset(2, 2),
+                                  blurRadius: 4,
+                                  color: Colors.black54,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                  ),
+
                 ],
               ),
             )
