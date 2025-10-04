@@ -1,5 +1,8 @@
+import 'package:ecommerce_app_ui/controllers/auth_controller.dart';
 import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
+import 'package:ecommerce_app_ui/view/widgets/signin_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -32,6 +35,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       image: 'assets/images/intro2.png',
     ),
   ];
+
+  // Handle Get Started Button
+  void _handleGetStarted(){
+    final AuthController authController = Get.find<AuthController>();
+    authController.setFirstTimeDone();
+    Get.off(() => const SigninScreen());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +126,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               TextButton(
-                  onPressed: (){},
+                  onPressed: () => _handleGetStarted(),
                   child: Text(
                     "Skip",
                     style: AppTextStyle.withColor(
@@ -129,7 +139,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 onPressed: (){
                 if(_currentPage < _items.length - 1) {
                   _pageController.nextPage(duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
-                }else{}
+                }else{
+                  _handleGetStarted();
+                }
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Theme.of(context).primaryColor,
