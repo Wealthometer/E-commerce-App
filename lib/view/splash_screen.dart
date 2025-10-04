@@ -9,8 +9,18 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(milliseconds: 2500), () {
+      if (authController.isFirstTime) {
+
+      } else if (authController.isLoggedIn) {
+
+      } else {
+        
+      }
+    });
+
     return Scaffold(
-      body : Container(
+      body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
@@ -19,18 +29,16 @@ class SplashScreen extends StatelessWidget {
               Theme.of(context).primaryColor,
               Theme.of(context).primaryColor.withOpacity(0.8),
               Theme.of(context).primaryColor.withOpacity(0.5),
-            ]
-          )
+            ],
+          ),
         ),
         child: Stack(
           children: [
             const Positioned.fill(
-                child: Opacity(
-                  opacity: 0.05,
-                  child: GridPattern(
-                    color: Colors.white
-                  ),
-                ),
+              child: Opacity(
+                opacity: 0.05,
+                child: GridPattern(color: Colors.white),
+              ),
             ),
 
             Center(
@@ -38,98 +46,93 @@ class SplashScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TweenAnimationBuilder<double>(
-                      tween: Tween(begin: 0.0, end: 1.0),
-                      duration: const Duration(milliseconds: 1200),
-                      builder: (context, value, child){
-                        return Transform.scale(
-                          scale: value,
-                          child: Container(
-                            padding: const EdgeInsets.all(24),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              shape: BoxShape.circle,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.1),
-                                  blurRadius: 20,
-                                  spreadRadius: 2,
-                                  offset: const Offset(0, 4)
-                                )
-                              ]
-                            ),
-                            child: Icon(
-                              Icons.shopping_bag_outlined,
-                              size: 48,
-                              color: Theme.of(context).primaryColor,
-                            ),
+                    tween: Tween(begin: 0.0, end: 1.0),
+                    duration: const Duration(milliseconds: 1200),
+                    builder: (context, value, child) {
+                      return Transform.scale(
+                        scale: value,
+                        child: Container(
+                          padding: const EdgeInsets.all(24),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.1),
+                                blurRadius: 20,
+                                spreadRadius: 2,
+                                offset: const Offset(0, 4),
+                              ),
+                            ],
                           ),
-                        );
-                      }
+                          child: Icon(
+                            Icons.shopping_bag_outlined,
+                            size: 48,
+                            color: Theme.of(context).primaryColor,
+                          ),
+                        ),
+                      );
+                    },
                   ),
 
-                  const SizedBox(
-                    height: 32,
-                  ),
+                  const SizedBox(height: 32),
 
                   //Animated Text
                   TweenAnimationBuilder<double>(
-                      tween: Tween(begin: 0.0, end: 1.0),
-                      duration: const Duration(milliseconds: 1200),
-                      builder: (context, value, child){
-                        return Opacity(
-                          opacity: value,
-                          child: Transform.translate(
-                            offset: Offset(0, 20 * (1 - value)),
-                            child: child,
-                          ),
-                        );
-                      },
+                    tween: Tween(begin: 0.0, end: 1.0),
+                    duration: const Duration(milliseconds: 1200),
+                    builder: (context, value, child) {
+                      return Opacity(
+                        opacity: value,
+                        child: Transform.translate(
+                          offset: Offset(0, 20 * (1 - value)),
+                          child: child,
+                        ),
+                      );
+                    },
 
-                      child: Column(
-                        children: [
-                          Text(
-                            "Fashion",
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.7),
-                              fontSize: 32,
-                              fontWeight: FontWeight.w300,
-                              letterSpacing: 8,
-                              // decoration: TextDecoration.underline,
-                              shadows: [
-                                Shadow(
-                                  offset: Offset(2, 2),
-                                  blurRadius: 4,
-                                  color: Colors.black45,
-                                ),
-                              ],
-
-                            ),
+                    child: Column(
+                      children: [
+                        Text(
+                          "Fashion",
+                          style: TextStyle(
+                            color: Colors.white.withOpacity(0.7),
+                            fontSize: 32,
+                            fontWeight: FontWeight.w300,
+                            letterSpacing: 8,
+                            // decoration: TextDecoration.underline,
+                            shadows: [
+                              Shadow(
+                                offset: Offset(2, 2),
+                                blurRadius: 4,
+                                color: Colors.black45,
+                              ),
+                            ],
                           ),
+                        ),
 
-                          Text(
-                            "¡STORE!",
-                            style: TextStyle(
-                                color: Colors.white.withOpacity(0.98),
-                                fontSize: 35,
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: 4,
-                              shadows: [
-                                Shadow(
-                                  offset: Offset(2, 2),
-                                  blurRadius: 4,
-                                  color: Colors.black54,
-                                ),
-                              ],
-                            ),
+                        Text(
+                          "¡STORE!",
+                          style: TextStyle(
+                            color: Colors.white.withOpacity(0.98),
+                            fontSize: 35,
+                            fontWeight: FontWeight.w600,
+                            letterSpacing: 4,
+                            shadows: [
+                              Shadow(
+                                offset: Offset(2, 2),
+                                blurRadius: 4,
+                                color: Colors.black54,
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
+                    ),
                   ),
-
                 ],
               ),
             ),
-
 
             // bottom tagline
             Positioned(
@@ -139,36 +142,32 @@ class SplashScreen extends StatelessWidget {
               child: TweenAnimationBuilder<double>(
                 tween: Tween(begin: 0.0, end: 1.0),
                 duration: const Duration(milliseconds: 1200),
-                builder: (context, value, child){
-                  return Opacity(
-                      opacity: value,
-                      child: child
-                  );
+                builder: (context, value, child) {
+                  return Opacity(opacity: value, child: child);
                 },
 
                 child: Text(
                   "Style Meets Simplicity ¡!",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                      color: Colors.white.withOpacity(0.8),
-                      fontSize: 14,
-                      letterSpacing: 2,
-                      fontWeight: FontWeight.w300,
-                      shadows: [
-                        Shadow(
-                          offset: Offset(2, 2),
-                          blurRadius: 4,
-                          color: Colors.black54,
-                        )
-                      ],
+                    color: Colors.white.withOpacity(0.8),
+                    fontSize: 14,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w300,
+                    shadows: [
+                      Shadow(
+                        offset: Offset(2, 2),
+                        blurRadius: 4,
+                        color: Colors.black54,
+                      ),
+                    ],
                   ),
                 ),
               ),
-            )
-
+            ),
           ],
         ),
-      )
+      ),
     );
   }
 }
@@ -176,16 +175,11 @@ class SplashScreen extends StatelessWidget {
 class GridPattern extends StatelessWidget {
   final Color color;
 
-  const GridPattern ({
-    Key? key,
-    required this.color
-  }): super(key : key);
+  const GridPattern({Key? key, required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return CustomPaint(
-      painter: GridPainter(color: color),
-    );
+    return CustomPaint(painter: GridPainter(color: color));
   }
 }
 
@@ -197,16 +191,16 @@ class GridPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-        ..color = color
-        ..strokeWidth = 0.5;
+      ..color = color
+      ..strokeWidth = 0.5;
 
     final spacing = 20.0;
 
-    for( var i = 0.0; i < size.width; i += spacing ) {
+    for (var i = 0.0; i < size.width; i += spacing) {
       canvas.drawLine(Offset(i, 0), Offset(i, size.height), paint);
     }
 
-    for( var i = 0.0; i < size.height; i += spacing ) {
+    for (var i = 0.0; i < size.height; i += spacing) {
       canvas.drawLine(Offset(0, i), Offset(size.width, i), paint);
     }
   }
