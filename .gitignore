@@ -12,6 +12,7 @@ linux/
 macos/
 web/
 test/
+windows/
 .buildlog/
 .history
 .svn/
