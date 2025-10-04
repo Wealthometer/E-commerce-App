@@ -72,11 +72,27 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 32),
+                    child: Text(
+                        _items[index].description,
+                      textAlign: TextAlign.center,
+                      style: AppTextStyle.withColor(
+                        AppTextStyle.bodyLarge,
+                        isDark ? Colors.grey[400]! : Colors.grey[600]!
+                      ),
+                    ),
                   ),
                 ],
               );
             }
           ),
+          Positioned(
+            bottom: 80,
+              left: 0,
+              right: 0,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+              ),
+          )
         ],
       ),
     );
