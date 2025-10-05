@@ -69,15 +69,33 @@ class _CustomTextfieldState extends State<CustomTextfield> {
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
             color: isDark ? Colors.grey[700]! : Colors.grey[300]!,
-          ), // BorderSide
-        ), // OutlineInputBorder
+          ),
+        ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
             color: isDark ? Colors.grey[700]! : Colors.grey[300]!,
+          ),
+        ),
+        focusedBorder : OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: Theme.of(context).primaryColor,
+          ),
+        ),
+        errorBorder : OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: Theme.of(context).colorScheme.error,
+          ),
+        ),
+        focusedErrorBorder : OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: Theme.of(context).colorScheme.error,
           ), // BorderSide
-        ), // OutlineInputBorder
-      ), // InputDecoration
+        ),
+      ),
     );
   }
 }
