@@ -4,7 +4,6 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class CustomTextfield extends StatefulWidget {
-
   final String label;
   final IconData prefixIcon;
   final TextInputType keyboardType;
@@ -28,12 +27,10 @@ class CustomTextfield extends StatefulWidget {
 }
 
 class _CustomTextfieldState extends State<CustomTextfield> {
-
   bool _obscureText = true;
 
   @override
   Widget build(BuildContext context) {
-
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return TextFormField(
@@ -43,7 +40,7 @@ class _CustomTextfieldState extends State<CustomTextfield> {
       validator: widget.validator,
       onChanged: widget.onChanged,
       style: AppTextStyle.withColor(
-          AppTextStyle.bodyMedium,
+        AppTextStyle.bodyMedium,
         Theme.of(context).textTheme.bodyLarge!.color!,
       ),
       decoration: InputDecoration(
@@ -58,16 +55,28 @@ class _CustomTextfieldState extends State<CustomTextfield> {
         ), // Icon
         suffixIcon: widget.isPassword
             ? IconButton(
-          onPressed: () {
-            setState(() {
-
-            });
-          },
-          icon: Icon(
-            _obscureText ? Icons.visibility_off : Icons.visibility,
-          ), // Icon
-        ) // IconButton
-            : null
+                onPressed: () {
+                  setState(() {
+                    _obscureText = !_obscureText;
+                  });
+                },
+                icon: Icon(
+                  _obscureText ? Icons.visibility_off : Icons.visibility,
+                ), // Icon
+              ) // IconButton
+            : null,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: isDark ? Colors.grey[700]! : Colors.grey[300]!,
+          ), // BorderSide
+        ), // OutlineInputBorder
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(
+            color: isDark ? Colors.grey[700]! : Colors.grey[300]!,
+          ), // BorderSide
+        ), // OutlineInputBorder
       ), // InputDecoration
     );
   }
