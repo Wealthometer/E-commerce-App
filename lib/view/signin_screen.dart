@@ -135,7 +135,11 @@ class SigninScreen extends StatelessWidget {
                         SignUpScreen(),
                       ),
                       child: Text(
-                        "Sign Up¡"
+                        "Sign Up¡",
+                        style: AppTextStyle.withColor(
+                            AppTextStyle.bodyMedium,
+                            Theme.of(context).primaryColor,
+                        ),
                       )
                   )
                 ],
