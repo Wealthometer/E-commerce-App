@@ -1,4 +1,7 @@
+import 'package:ecommerce_app_ui/controllers/auth_controller.dart';
 import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
+import 'package:ecommerce_app_ui/view/main_screen.dart';
+import 'package:ecommerce_app_ui/view/sign_up_screen.dart';
 import 'package:ecommerce_app_ui/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -112,6 +115,30 @@ class SigninScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 24,
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Don't have an account.?¡",
+                    style: AppTextStyle.withColor(
+                        AppTextStyle.bodyMedium,
+                        isDark ? Colors.grey[400]! : Colors.grey[600]!
+                    ),
+                  ),
+                  TextButton(
+                      onPressed: () => Get.to(
+                        SignUpScreen(),
+                      ),
+                      child: Text(
+                        "Sign Up¡"
+                      )
+                  )
+                ],
               )
             ],
           ),
@@ -122,7 +149,9 @@ class SigninScreen extends StatelessWidget {
 
   //Sign in btn onpressed
 
-void _handleSignIn() {
-    
-}
+  void _handleSignIn() {
+    final AuthController authController = Get.find<AuthController>();
+    authController.login();
+    Get.offAll(() => const MainScreen());
+  }
 }
