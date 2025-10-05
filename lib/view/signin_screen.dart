@@ -1,8 +1,12 @@
 import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
+import 'package:ecommerce_app_ui/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 
 class SigninScreen extends StatelessWidget {
-  const SigninScreen({super.key});
+  SigninScreen({super.key});
+
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +36,13 @@ class SigninScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 40),
+
+              CustomTextfield(
+                label: "Email",
+                prefixIcon: Icons.email_outlined,
+                keyboardType: TextInputType.emailAddress,
+                controller: ,
+              )
             ],
           ),
         ),
