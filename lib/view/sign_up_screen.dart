@@ -66,13 +66,29 @@ class SignUpScreen extends StatelessWidget {
                 // controller: _passwordController,
                 validator: (value){
                   if (value == null ||value.isEmpty) {
-                    return "Please enter your Password";
+                    return "Please enter your Full Name";
                   }
                   return null;
                 },
               ),
 
+              const SizedBox(
+                height: 40,
+              ),
 
+              CustomTextfield(
+                label: "Email",
+                prefixIcon: Icons.email_outlined,
+                keyboardType: TextInputType.emailAddress,
+                // isPassword: true,
+                controller: _emailController,
+                validator: (value){
+                  if (value == null ||value.isEmpty) {
+                    return "Please enter your Email";
+                  }
+                  return null;
+                },
+              ),
             ],
           ),
         ),
