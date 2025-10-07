@@ -144,7 +144,7 @@ class SignUpScreen extends StatelessWidget {
                       backgroundColor: Theme.of(context).primaryColor
                     ),
                     child: Text(
-                        ""
+                        "Sign Up"
                     ),
                 ),
               )
