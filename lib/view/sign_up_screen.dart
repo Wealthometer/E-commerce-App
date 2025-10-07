@@ -1,8 +1,8 @@
+import 'package:ecommerce_app_ui/view/main_screen.dart';
 import 'package:ecommerce_app_ui/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-
 import '../utils/app_textstyles.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -73,7 +73,7 @@ class SignUpScreen extends StatelessWidget {
               ),
 
               const SizedBox(
-                height: 40,
+                height: 16,
               ),
 
               CustomTextfield(
@@ -86,9 +86,68 @@ class SignUpScreen extends StatelessWidget {
                   if (value == null ||value.isEmpty) {
                     return "Please enter your Email";
                   }
+                  if (!GetUtils.isEmail(value)) {
+                    return "Please Enter A valid Email";
+                  }
                   return null;
                 },
               ),
+
+              const SizedBox(
+                height: 16,
+              ),
+
+              CustomTextfield(
+                label: "Password",
+                prefixIcon: Icons.lock_outline_sharp,
+                keyboardType: TextInputType.visiblePassword,
+                isPassword: true,
+                controller: _passwordController,
+                validator: (value){
+                  if (value == null ||value.isEmpty) {
+                    return "Please enter your Password";
+                  }
+                  return null;
+                },
+              ),
+
+              const SizedBox(
+                height: 16,
+              ),
+
+              CustomTextfield(
+                label: "Confirm Password",
+                prefixIcon: Icons.lock_open_outlined,
+                keyboardType: TextInputType.visiblePassword,
+                isPassword: true,
+                controller: _passwordController,
+                validator: (value){
+                  if (value == null ||value.isEmpty) {
+                    return "Please enter your Password";
+                  }
+                  if (value != _passwordController.text) {
+                    return "Password doesn't match";
+                  }
+                  return null;
+                },
+              ),
+
+              const SizedBox(
+                height: 24,
+              ),
+
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                    onPressed: () => Get.off(() => const MainScreen()),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Theme.of(context).primaryColor
+                    ),
+                    child: Text(
+                        ""
+                    ),
+                ),
+              )
             ],
           ),
         ),
