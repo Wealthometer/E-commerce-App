@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_ui/view/main_screen.dart';
+import 'package:ecommerce_app_ui/view/signin_screen.dart';
 import 'package:ecommerce_app_ui/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -141,12 +142,49 @@ class SignUpScreen extends StatelessWidget {
                 child: ElevatedButton(
                     onPressed: () => Get.off(() => const MainScreen()),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Theme.of(context).primaryColor
+                      backgroundColor: Theme.of(context).primaryColor,
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 16
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12)
+                      )
                     ),
                     child: Text(
-                        "Sign Up"
+                      "Sign Up",
+                      style: AppTextStyle.withColor(
+                        AppTextStyle.buttonMedium, 
+                        Colors.white
+                      ),
                     ),
                 ),
+              ),
+
+              const SizedBox(
+                height: 24,
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Already have an account? ',
+                    style: AppTextStyle.withColor(
+                      AppTextStyle.bodyMedium,
+                      isDark ? Colors.grey[400]! : Colors.grey[600]!,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () => Get.off(() => SigninScreen()),
+                    child: Text(
+                      'Sign In',
+                      style: AppTextStyle.withColor(
+                        AppTextStyle.bodyMedium,
+                        Theme.of(context).primaryColor,
+                      ),
+                    ),
+                  ),
+                ],
               )
             ],
           ),
