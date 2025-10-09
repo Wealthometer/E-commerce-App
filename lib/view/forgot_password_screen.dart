@@ -47,7 +47,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                 "Sign In To Continue Shopping",
                 style: AppTextStyle.withColor(
                   AppTextStyle.bodyLarge,
-                  isDark ? Colors.grey[400]! : Colors.grey[600]!, 
+                  isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
               ),
 
