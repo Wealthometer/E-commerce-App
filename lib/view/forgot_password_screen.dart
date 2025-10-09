@@ -32,9 +32,9 @@ class ForgotPasswordScreen extends StatelessWidget {
               ),
 
               Text(
-                "Sign In To Continue Shopping",
+                "Reset Password",
                 style: AppTextStyle.withColor(
-                  AppTextStyle.bodyLarge,
+                  AppTextStyle.h1,
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
@@ -47,7 +47,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                 "Sign In To Continue Shopping",
                 style: AppTextStyle.withColor(
                   AppTextStyle.bodyLarge,
-                  Theme.of(context).textTheme.bodyLarge!.color!,
+                  isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
               ),
 
