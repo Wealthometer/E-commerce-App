@@ -3,6 +3,7 @@ import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
 import 'package:ecommerce_app_ui/view/main_screen.dart';
 import 'package:ecommerce_app_ui/view/sign_up_screen.dart';
 import 'package:ecommerce_app_ui/view/widgets/custom_textfield.dart';
+import 'package:ecommerce_app_ui/view/forgot_password_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -82,7 +83,7 @@ class SigninScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                    onPressed: (){},
+                    onPressed: ()=> Get.to(()=> ForgotPasswordScreen()),
                     child: Text(
                       "Forgot Password",
                       style: AppTextStyle.withColor(
