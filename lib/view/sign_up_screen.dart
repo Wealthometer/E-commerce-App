@@ -124,7 +124,7 @@ class SignUpScreen extends StatelessWidget {
                 controller: _passwordController,
                 validator: (value){
                   if (value == null ||value.isEmpty) {
-                    return "Please enter your Password";
+                    return "Please Confirm your Password";
                   }
                   if (value != _passwordController.text) {
                     return "Password doesn't match";
