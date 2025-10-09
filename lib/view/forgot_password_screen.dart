@@ -38,7 +38,20 @@ class ForgotPasswordScreen extends StatelessWidget {
                   Theme.of(context).textTheme.bodyLarge!.color!,
                 ),
               ),
-              const SizedBox(height: 40),
+
+              const SizedBox(
+                  height: 8
+              ),
+
+              Text(
+                "Sign In To Continue Shopping",
+                style: AppTextStyle.withColor(
+                  AppTextStyle.bodyLarge,
+                  Theme.of(context).textTheme.bodyLarge!.color!,
+                ),
+              ),
+
+              const SizedBox(height: 8),
             ],
           ),
         ),
