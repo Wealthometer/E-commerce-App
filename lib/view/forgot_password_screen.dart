@@ -53,7 +53,7 @@ class ForgotPasswordScreen extends StatelessWidget {
 
               const SizedBox(height: 8),
             ],
-          ), 
+          ),
         ),
       ),
     );
