@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../utils/app_textstyles.dart';
+
 class ForgotPasswordScreen extends StatelessWidget {
   ForgotPasswordScreen({super.key});
 
@@ -29,7 +31,14 @@ class ForgotPasswordScreen extends StatelessWidget {
                 height: 20,
               ),
 
-              
+              Text(
+                "Sign In To Continue Shopping",
+                style: AppTextStyle.withColor(
+                  AppTextStyle.bodyLarge,
+                  Theme.of(context).textTheme.bodyLarge!.color!,
+                ),
+              ),
+              const SizedBox(height: 40),
             ],
           ),
         ),
