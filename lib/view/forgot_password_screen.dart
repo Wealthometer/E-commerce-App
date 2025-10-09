@@ -24,6 +24,12 @@ class ForgotPasswordScreen extends StatelessWidget {
                     color: isDark ? Colors.white :  Colors.black,
                   )
               ),
+
+              const SizedBox(
+                height: 20,
+              ),
+
+              
             ],
           ),
         ),
