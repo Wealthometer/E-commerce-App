@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_ui/view/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -44,18 +45,65 @@ class ForgotPasswordScreen extends StatelessWidget {
               ),
 
               Text(
-                "Sign In To Continue Shopping",
+                "Enter Your Email To Rest Your Password",
                 style: AppTextStyle.withColor(
                   AppTextStyle.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
               ),
 
-              const SizedBox(height: 8),
+              const SizedBox(height: 16),
+
+              // const SizedBox(height: 40),
+
+              CustomTextfield(
+                label: "Email",
+                prefixIcon: Icons.email_outlined,
+                keyboardType: TextInputType.emailAddress,
+                controller: _emailController,
+                validator: (value){
+                  if (value == null ||value.isEmpty) {
+                    return "Please enter your email";
+                  }
+                  if (!GetUtils.isEmail(value)) {
+                    return "Please enter a valid email";
+                  }
+                  return null;
+                },
+              ),
             ],
           ),
         ),
       ),
     );
+
+
+    void showSuccessDialog(BuildContext context) {
+      Get.dialog(
+          AlertDialog(
+              title: Text(
+                'Check Your Email',
+                style: AppTextStyle.h3,
+              ),
+              content: Text(
+                'We have sent password recovery instructions to your email.',
+                style: AppTextStyle.bodyMedium,
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Get.back(),
+                  child: Text(
+                    'OK',
+                    style: AppTextStyle.withColor(
+                      AppTextStyle.buttonMedium,
+                      Colors.white,
+                    ),
+                  ),
+                ),
+              ],
+              ),
+          );
+    }
+
   }
 }
