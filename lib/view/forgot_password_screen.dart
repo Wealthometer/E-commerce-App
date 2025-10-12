@@ -92,7 +92,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               actions: [
                 TextButton(
                   onPressed: () => Get.back(),
-                  child: Text( 
+                  child: Text(
                     'OK',
                     style: AppTextStyle.withColor(
                       AppTextStyle.buttonMedium,
