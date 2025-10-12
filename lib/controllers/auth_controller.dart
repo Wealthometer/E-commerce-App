@@ -19,7 +19,7 @@ class AuthController extends GetxController {
 
   void _loadInitialState(){
     _isFirstTime.value = _storage.read('isFirstTime') ?? true;
-    _isLoggedIn.value = _storage.read('isLoggedIn') ?? false;
+    _isLoggedIn.value = _storage.read('isLoggedIn') ?? false; 
   }
 
   void setFirstTimeDone(){
