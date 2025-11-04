@@ -19,50 +19,50 @@ class ForgotPasswordScreen extends StatelessWidget {
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(24),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              IconButton(
-                  onPressed: () => Get.back(),
-                  icon: Icon(
-                    Icons.arrow_back_ios_new,
-                    color: isDark ? Colors.white :  Colors.black,
-                  )
+              // Custom top bar
+              Row(
+                children: [
+                  IconButton(
+                    onPressed: () => Get.back(),
+                    icon: Icon(
+                      Icons.arrow_back_ios_new,
+                      color: isDark ? Colors.white : Colors.black,
+                    ),
+                  ),
+                  const Spacer(),
+                  Text(
+                    "Reset Password",
+                    style: AppTextStyle.withColor(
+                      AppTextStyle.h1,
+                      Theme.of(context).textTheme.bodyLarge!.color!,
+                    ),
+                  ),
+                  const Spacer(flex: 2), // balances out spacing on the right
+                ],
               ),
 
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 12),
 
               Text(
-                "Reset Password",
-                style: AppTextStyle.withColor(
-                  AppTextStyle.h1,
-                  Theme.of(context).textTheme.bodyLarge!.color!,
-                ),
-              ),
-
-              const SizedBox(
-                  height: 8
-              ),
-
-              Text(
-                "Enter Your Email To Rest Your Password",
+                "Enter Your Email To Reset Your Password",
                 style: AppTextStyle.withColor(
                   AppTextStyle.bodyLarge,
                   isDark ? Colors.grey[400]! : Colors.grey[600]!,
                 ),
+                textAlign: TextAlign.end,
               ),
 
-              const SizedBox(height: 24),
-
-              // const SizedBox(height: 40),
+              const SizedBox(height: 32),
 
               CustomTextfield(
                 label: "Email",
                 prefixIcon: Icons.email_outlined,
                 keyboardType: TextInputType.emailAddress,
                 controller: _emailController,
-                validator: (value){
-                  if (value == null ||value.isEmpty) {
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
                     return "Please enter your email";
                   }
                   if (!GetUtils.isEmail(value)) {
@@ -72,20 +72,21 @@ class ForgotPasswordScreen extends StatelessWidget {
                 },
               ),
 
-              const SizedBox(
-                height: 24,
-              ),
+              const SizedBox(height: 24),
 
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: (){},
-                    child:Text('Send Reset Link')
-                ),
-              )
+                  onPressed: () {
 
+
+                  },
+                  child: const Text('Send Reset Link'),
+                ),
+              ),
             ],
           ),
+
         ),
       ),
     );
