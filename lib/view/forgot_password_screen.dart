@@ -52,7 +52,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 16),
+              const SizedBox(height: 24),
 
               // const SizedBox(height: 40),
 
@@ -71,6 +71,19 @@ class ForgotPasswordScreen extends StatelessWidget {
                   return null;
                 },
               ),
+
+              const SizedBox(
+                height: 24,
+              ),
+
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                    onPressed: (){},
+                    child:Text('Send Reset Link')
+                ),
+              )
+
             ],
           ),
         ),
