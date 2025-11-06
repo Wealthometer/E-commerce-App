@@ -8,9 +8,25 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Home Screen'
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      body: const SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(
+                16
+              ),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 20,
+                    backgroundImage: AssetImage('assets/images/avatar.jpg'),
+                  ),
+                  
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );
