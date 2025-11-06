@@ -40,7 +40,7 @@ class MainScreen extends StatelessWidget {
                   )
               ),
           ),
-          bottomNavigationBar: CustomBottomNavbar(),
+          bottomNavigationBar: const CustomBottomNavbar(),
         )
     );
   }
