@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
@@ -11,7 +12,7 @@ class CategoryChips extends StatefulWidget {
 
 class _CategoryChipsState extends State<CategoryChips> {
   int selectedIndex = 0;
-  final categories =  ['All', 'Men', 'Women', 'Girls'];
+  final categories =  ['All', 'Men', 'Women', 'Girls', 'Boys'];
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +36,25 @@ class _CategoryChipsState extends State<CategoryChips> {
                 ),
                 curve: Curves.easeInOut,
                 child: ChoiceChip(
-                    label: Text(""),
-                    selected:
+                    label: Text(
+                      categories[index],
+                      style: AppTextStyle.withColor(
+                        selectedIndex == index
+                            ? AppTextStyle.withWeight(
+                          AppTextStyle.bodySmall,
+                          FontWeight.w600,
+                        ) : AppTextStyle.bodySmall,
+                        selectedIndex == index ?
+                            Colors.white :
+                            isDark ? Colors.grey[100]! : Colors.grey[600]!,
+                      ),
+                    ),
+                    selected: selectedIndex == index,
+                  onSelected: (bool selected){
+                      setState(() {
+                        selectedIndex = selected ? index : selectedIndex;
+                      });
+                  },
                 ),
               ),
             )
