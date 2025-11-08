@@ -1,6 +1,8 @@
 import 'package:ecommerce_app_ui/controllers/theme_controller.dart';
 import 'package:ecommerce_app_ui/view/widgets/category_chips.dart';
 import 'package:ecommerce_app_ui/view/widgets/custom_search_bar.dart';
+import 'package:ecommerce_app_ui/view/widgets/product_grid.dart';
+import 'package:ecommerce_app_ui/view/widgets/sale_banner.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -87,6 +89,38 @@ class HomeScreen extends StatelessWidget {
             const CustomSearchBar(),
 
             const CategoryChips(),
+
+            const SaleBanner(),
+
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 8
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Popular Products',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: (){},
+                    child: Text(
+                      'See All',
+                      style: TextStyle(
+                        color: Theme.of(context).primaryColor
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            
+            Expanded(child: ProductGrid())
           ],
         ),
       ),
