@@ -55,6 +55,27 @@ class _CategoryChipsState extends State<CategoryChips> {
                         selectedIndex = selected ? index : selectedIndex;
                       });
                   },
+                  selectedColor: Theme.of(context).primaryColor,
+                  backgroundColor: isDark ? Colors.grey[800] : Colors.grey[100],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20)
+                  ),
+                  elevation: selectedIndex == index ? 2 : 0,
+                  pressElevation: 0,
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 8
+                  ),
+                  labelPadding: EdgeInsets.symmetric(
+                      horizontal: 4,
+                      vertical: 1
+                  ),
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  side: BorderSide(
+                    color: selectedIndex == index ?
+                        Colors.transparent :
+                    isDark ? Colors.grey[700]! : Colors.grey[300]!,
+                  ),
                 ),
               ),
             )
