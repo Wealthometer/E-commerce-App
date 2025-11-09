@@ -52,4 +52,20 @@ final List<Product> products = [
     imageUrl: 'assets/images/shoes2.jpg',
     description: 'This is a description of the product 4',
   ),
+  const Product(
+    name: 'Adidas',
+    category: 'Shirt',
+    price: 69.00,
+    oldPrice: 189.00,
+    imageUrl: 'assets/images/adidasshirt.jpeg',
+    description: 'This is a description of the product 4',
+  ),
+  const Product(
+    name: 'Street Wear',
+    category: 'Trouser',
+    price: 69.00,
+    oldPrice: 189.00,
+    imageUrl: 'assets/images/street-wear.jpeg',
+    description: 'This is a description of the product 4',
+  ),
 ];
