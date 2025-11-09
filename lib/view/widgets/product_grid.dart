@@ -1,4 +1,6 @@
+import 'package:ecommerce_app_ui/models/product.dart';
 import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
+import 'package:ecommerce_app_ui/view/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -7,6 +9,22 @@ class ProductGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return GridView.builder(
+      padding: const EdgeInsets.all(16),
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        childAspectRatio: 0.75,
+        crossAxisSpacing: 16,
+        mainAxisSpacing: 16
+      ),
+      itemCount: products.length,
+      itemBuilder: (context, index){
+        final product = products[index];
+        return GestureDetector(
+          onTap: (){},
+          child: ProductCard(product: product),
+        );
+      }
+    );
   }
 }
