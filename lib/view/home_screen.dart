@@ -120,7 +120,9 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             
-            Expanded(child: ProductGrid())
+            Expanded(child: ProductGrid()),
+
+
           ],
         ),
       ),
