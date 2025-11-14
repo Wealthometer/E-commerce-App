@@ -110,8 +110,6 @@ class ProductCard extends StatelessWidget {
                     AppTextStyle.bodyMedium,
                     Theme.of(context).textTheme.bodyLarge!.color!,
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
                 ),
               ],
             ),
