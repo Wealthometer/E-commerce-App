@@ -91,7 +91,9 @@ class ProductCard extends StatelessWidget {
           ),
 
           Padding(
-            padding: EdgeInsets.all(screenWidth * 0.02),
+            padding: EdgeInsets.all(
+                screenWidth * 0.02
+            ),
             child: Column(
               children: [
                 Text(
@@ -103,13 +105,18 @@ class ProductCard extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
-                SizedBox(height: screenWidth * 0.01),
+                SizedBox(
+                    height: screenWidth * 0.01)
+                ,
                 Text(
                   product.category,
                   style: AppTextStyle.withColor(
                     AppTextStyle.bodyMedium,
-                    Theme.of(context).textTheme.bodyLarge!.color!,
+                    isDark ? Colors.grey[400]! : Colors.grey[600]!,
                   ),
+                ),
+                SizedBox(
+                  height: screenWidth * 0.01,
                 ),
               ],
             ),
