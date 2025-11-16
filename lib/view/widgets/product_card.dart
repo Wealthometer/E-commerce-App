@@ -82,14 +82,14 @@ class ProductCard extends StatelessWidget {
                           AppTextStyle.buttonSmall,
                           FontWeight.bold,
                         ),
-                        Colors.white,
+                        Colors.white, 
                       ),
                     ),
                   ),
                 ),
             ],
           ),
- 
+
           Padding(
             padding: EdgeInsets.all(
                 screenWidth * 0.02
