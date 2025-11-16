@@ -89,8 +89,8 @@ class ProductCard extends StatelessWidget {
                 ),
             ],
           ),
-
-          Padding( 
+ 
+          Padding(
             padding: EdgeInsets.all(
                 screenWidth * 0.02
             ),
