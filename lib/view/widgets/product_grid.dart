@@ -24,7 +24,7 @@ class ProductGrid extends StatelessWidget {
           onTap: (){},
           child: ProductCard(product: product),
         );
-      } 
+      }  
     );
   }
 }
