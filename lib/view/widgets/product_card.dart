@@ -82,7 +82,7 @@ class ProductCard extends StatelessWidget {
                           AppTextStyle.buttonSmall,
                           FontWeight.bold,
                         ),
-                        Colors.white, 
+                        Colors.white,
                       ),
                     ),
                   ),
