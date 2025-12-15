@@ -118,6 +118,29 @@ class ProductCard extends StatelessWidget {
                 SizedBox(
                   height: screenWidth * 0.01,
                 ),
+                
+                Row(
+                  children: [
+                    Text(
+                      '\$${product.price.toStringAsFixed(2)}  ',
+                      style: AppTextStyle.withColor(
+                          AppTextStyle.withWeight(AppTextStyle.bodyLarge, FontWeight.bold),
+                          Theme.of(context).textTheme.bodyLarge!.color!,
+                      )
+                    ),
+                    if( product.oldPrice != null ) ...[
+                      Text(
+                          '\$${product.oldPrice!.toStringAsFixed(2)}',
+                          style: AppTextStyle.withColor(
+                            AppTextStyle.bodySmall,
+                            isDark ? Colors.grey[400]! : Colors.grey[600]!,
+                          ).copyWith(
+                            decoration: TextDecoration.lineThrough,
+                          )
+                      ),
+                    ]
+                  ],
+                )
               ],
             ),
           ),
