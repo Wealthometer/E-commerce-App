@@ -63,8 +63,8 @@ final List<Product> products = [
   const Product(
     name: 'Street Wear',
     category: 'Trouser',
-    price: 69.00,
-    oldPrice: 189.00,
+    price: 60.00,
+    oldPrice: 179.00,
     imageUrl: 'assets/images/street-wear.jpeg',
     description: 'This is a description of the product 4',
   ),
