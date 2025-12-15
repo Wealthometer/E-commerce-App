@@ -95,6 +95,7 @@ class ProductCard extends StatelessWidget {
                 screenWidth * 0.02
             ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   product.name,
