@@ -21,7 +21,10 @@ class ProductGrid extends StatelessWidget {
       itemBuilder: (context, index){
         final product = products[index];
         return GestureDetector(
-          onTap: (){},
+          onTap: ()=> Navigator.push(
+              context,
+            MaterialPageRoute(builder: (context) => ProductDetailsScreen())
+          ),
           child: ProductCard(product: product),
         );
       }
