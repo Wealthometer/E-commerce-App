@@ -31,7 +31,7 @@ final List<Product> products = [
   const Product(
     name: 'Laptop',
     category: 'Electronics',
-    price: 69.00,
+    price: 100.00,
     oldPrice: 189.00,
     imageUrl: 'assets/images/laptop.jpg',
     description: 'This is a description of the product 2',
