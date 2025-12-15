@@ -76,7 +76,7 @@ class ProductCard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: Text(
-                      '',
+                      '${calculateDiscount(product.price, product.oldPrice!)}% OFF',
                       style: AppTextStyle.withColor(
                         AppTextStyle.withWeight(
                           AppTextStyle.buttonSmall,
