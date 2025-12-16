@@ -71,5 +71,6 @@ class ProductDetailsScreen extends StatelessWidget {
 
     final String shopLink = 'https://example.com/products/' + productName;
     final String shareMessage = '$description\n\nShop now @ $shopLink';
+
   }
 }
