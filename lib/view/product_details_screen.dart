@@ -68,6 +68,6 @@ class ProductDetailsScreen extends StatelessWidget {
   )async {
     // get the render box for share position origin (required for ipad)
     final box = context.findRenderObject() as RenderBox?;
-    
+
   }
 }
