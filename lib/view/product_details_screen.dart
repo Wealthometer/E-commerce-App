@@ -85,5 +85,7 @@ class ProductDetailsScreen extends StatelessWidget {
         );
       }
     }
+    catch (e) {
+    }
   }
 }
