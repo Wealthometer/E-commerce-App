@@ -49,6 +49,7 @@ class ProductDetailsScreen extends StatelessWidget {
       body: const SingleChildScrollView(
         child: Column(
           children: [
+            Stack(
     );
   }
 
