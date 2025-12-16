@@ -75,6 +75,8 @@ class ProductDetailsScreen extends StatelessWidget {
     try {
       final ShareResult result = await Share.share(
           shareMessage,
+          subject: productName,
+          sharePositionOrigin: box!.localToGlobal(Offset.zero) & box.size
       );
   }
 }
