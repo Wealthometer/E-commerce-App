@@ -27,7 +27,7 @@ class ProductDetailsScreen extends StatelessWidget {
             )
         ),
         title: Text(
-          "Details"
+          "Details",
         ),
       ),
     );
