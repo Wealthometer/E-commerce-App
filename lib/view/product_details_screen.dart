@@ -34,6 +34,7 @@ class ProductDetailsScreen extends StatelessWidget {
           ),
         ),
         actions: [
+          // Share button
       ),
     );
   }
