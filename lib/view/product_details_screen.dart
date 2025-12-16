@@ -87,6 +87,7 @@ class ProductDetailsScreen extends StatelessWidget {
     }
     catch (e) {
       debugPrint(
+          'Error Sharing: $e'
       );
     }
   }
