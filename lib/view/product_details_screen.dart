@@ -46,6 +46,7 @@ class ProductDetailsScreen extends StatelessWidget {
           )
         ],
       ),
+      body: const SingleChildScrollView(
     );
   }
 
