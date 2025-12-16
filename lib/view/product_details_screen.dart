@@ -52,6 +52,7 @@ class ProductDetailsScreen extends StatelessWidget {
             Stack(
               children: [
                 //image
+              ],
     );
   }
 
