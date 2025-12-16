@@ -78,5 +78,6 @@ class ProductDetailsScreen extends StatelessWidget {
           subject: productName,
           sharePositionOrigin: box!.localToGlobal(Offset.zero) & box.size
       );
+
   }
 }
