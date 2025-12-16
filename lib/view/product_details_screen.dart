@@ -20,6 +20,7 @@ class ProductDetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
+            onPressed: () => Navigator.pop(context),
             )
         title: Text(
           "Details"
