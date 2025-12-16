@@ -53,4 +53,5 @@ class ProductDetailsScreen extends StatelessWidget {
       BuildContext context,
       String productName,
       String description
+  )async{
 }
