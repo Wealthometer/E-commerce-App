@@ -33,6 +33,7 @@ class ProductDetailsScreen extends StatelessWidget {
             isDark ? Colors.white : Colors.black
           ),
         ),
+        actions: [
       ),
     );
   }
