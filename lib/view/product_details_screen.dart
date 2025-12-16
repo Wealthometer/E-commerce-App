@@ -43,6 +43,7 @@ class ProductDetailsScreen extends StatelessWidget {
               ),
               icon: Icon(Icons.share)
           )
+        ],
       ),
     );
   }
