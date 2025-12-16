@@ -40,6 +40,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 context,
                 product.name,
                 product.description
+              ),
       ),
     );
   }
