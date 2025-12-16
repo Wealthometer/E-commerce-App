@@ -13,6 +13,7 @@ class ProductDetailsScreen extends StatelessWidget {
 
     final screenSize = MediaQuery.of(context).size;
     final screenHeight = screenSize.height;
+    final screenWidth = screenSize.width;
 
 
     return Scaffold(
