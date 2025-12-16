@@ -73,5 +73,7 @@ class ProductDetailsScreen extends StatelessWidget {
     final String shareMessage = '$description\n\nShop now @ $shopLink';
 
     try {
+      final ShareResult result = await Share.share(
+      );
   }
 }
