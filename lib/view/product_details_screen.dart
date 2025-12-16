@@ -50,6 +50,7 @@ class ProductDetailsScreen extends StatelessWidget {
         child: Column(
           children: [
             Stack(
+              children: [
     );
   }
 
