@@ -38,6 +38,7 @@ class ProductDetailsScreen extends StatelessWidget {
           IconButton(
               onPressed: () => _shareProduct (
                 context,
+                product.name,
       ),
     );
   }
