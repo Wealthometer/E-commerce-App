@@ -59,6 +59,7 @@ class ProductDetailsScreen extends StatelessWidget {
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
+                )
               ],
             )
           ],
