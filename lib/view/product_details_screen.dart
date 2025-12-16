@@ -58,6 +58,7 @@ class ProductDetailsScreen extends StatelessWidget {
                       product.imageUrl,
                       width: double.infinity,
                       fit: BoxFit.cover,
+                    ),
               ],
             )
           ],
