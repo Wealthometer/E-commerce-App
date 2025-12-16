@@ -51,4 +51,5 @@ class ProductDetailsScreen extends StatelessWidget {
   //share product
   Future<void> _shareProduct(
       BuildContext context,
+      String productName,
 }
