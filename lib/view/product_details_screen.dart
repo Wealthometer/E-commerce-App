@@ -57,6 +57,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     child: Image.asset(
                       product.imageUrl,
                       width: double.infinity,
+                      fit: BoxFit.cover,
               ],
             )
           ],
