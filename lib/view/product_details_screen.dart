@@ -65,7 +65,7 @@ class ProductDetailsScreen extends StatelessWidget {
       BuildContext context,
       String productName,
       String description
-  )async{
+  )async {
     // get the render box for share position origin (required for ipad)
     final box = context.findRenderObject() as RenderBox?;
     
