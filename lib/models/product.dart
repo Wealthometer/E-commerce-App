@@ -58,7 +58,7 @@ final List<Product> products = [
     price: 45.00,
     oldPrice: 155.00,
     imageUrl: 'assets/images/adidasshirt.jpeg',
-    description: 'This is a description of the product 4',
+    description: 'This is a description of the product 5',
   ),
   const Product(
     name: 'Street Wear',
@@ -66,7 +66,7 @@ final List<Product> products = [
     price: 60.00,
     oldPrice: 179.00,
     imageUrl: 'assets/images/street-wear.jpeg',
-    description: 'This is a description of the product 4',
+    description: 'This is a description of the product 6',
   ),
   const Product(
     name: 'Street-Shoes',
@@ -74,7 +74,15 @@ final List<Product> products = [
     price: 78.00,
     oldPrice: 180.00,
     imageUrl: 'assets/images/shoe1.png',
-    description: 'This is a description of the product 3',
+    description: 'This is a description of the product 7',
+  ),
+  const Product(
+    name: 'Iphone17-xr',
+    category: 'Electronics',
+    price: 101.00,
+    oldPrice: 120.00,
+    imageUrl: 'assets/images/iphone-17-xr.jpeg',
+    description: 'This is a description of the product 8',
   ),
   // const Product(
   //   name: 'Designer shoe 1',
@@ -82,28 +90,28 @@ final List<Product> products = [
   //   price: 69.00,
   //   oldPrice: 189.00,
   //   imageUrl: 'assets/images/shoe2.png',
-  //   description: 'This is a description of the product 3',
+  //   description: 'This is a description of the product 9',
   // ),const Product(
   //   name: 'Designer shoe 2',
   //   category: 'Footwear',
   //   price: 69.00,
   //   oldPrice: 189.00,
   //   imageUrl: 'assets/images/shoe3.png',
-  //   description: 'This is a description of the product 3',
+  //   description: 'This is a description of the product 10',
   // ),const Product(
   //   name: 'Designer shoe 3',
   //   category: 'Footwear',
   //   price: 69.00,
   //   oldPrice: 189.00,
   //   imageUrl: 'assets/images/shoe4.png',
-  //   description: 'This is a description of the product 3',
+  //   description: 'This is a description of the product 11',
   // ),const Product(
   //   name: 'Designer shoe 4',
   //   category: 'Footwear',
   //   price: 69.00,
   //   oldPrice: 189.00,
   //   imageUrl: 'assets/images/shoe5.png',
-  //   description: 'This is a description of the product 3',
+  //   description: 'This is a description of the product 12',
   // ),
   // const Product(
   //   name: 'Designer shoe 5',
@@ -111,7 +119,7 @@ final List<Product> products = [
   //   price: 69.00,
   //   oldPrice: 189.00,
   //   imageUrl: 'assets/images/shoe6.png',
-  //   description: 'This is a description of the product 3',
+  //   description: 'This is a description of the product 13',
   // ),
 
 
