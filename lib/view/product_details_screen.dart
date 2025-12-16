@@ -69,5 +69,6 @@ class ProductDetailsScreen extends StatelessWidget {
     // get the render box for share position origin (required for ipad)
     final box = context.findRenderObject() as RenderBox?;
 
+    final String shopLink = 'https://example.com/products/' + productName;
   }
 }
