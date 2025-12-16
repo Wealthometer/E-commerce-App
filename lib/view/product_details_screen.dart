@@ -3,6 +3,7 @@ import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:share_plus/share_plus.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   final Product product;
