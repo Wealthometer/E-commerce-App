@@ -19,6 +19,7 @@ class ProductDetailsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
             )
         title: Text(
           "Details"
