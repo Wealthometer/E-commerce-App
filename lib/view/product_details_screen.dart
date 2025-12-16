@@ -54,6 +54,7 @@ class ProductDetailsScreen extends StatelessWidget {
       String productName,
       String description
   )async{
+    // get the render box for share position origin (required for ipad)
     
   }
 }
