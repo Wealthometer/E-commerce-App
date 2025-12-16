@@ -39,6 +39,7 @@ class ProductDetailsScreen extends StatelessWidget {
               onPressed: () => _shareProduct (
                 context,
                 product.name,
+                product.description
       ),
     );
   }
