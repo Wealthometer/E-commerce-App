@@ -25,6 +25,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 Icons.arrow_back,
                 color: isDark ? Colors.white : Colors.black,
             )
+        ),
         title: Text(
           "Details"
         ),
