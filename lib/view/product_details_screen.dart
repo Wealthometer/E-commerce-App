@@ -54,6 +54,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 //image
                 AspectRatio(
                     aspectRatio: 16/9,
+                    child: Image.asset(
               ],
             )
           ],
