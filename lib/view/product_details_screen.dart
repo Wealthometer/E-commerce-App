@@ -22,6 +22,7 @@ class ProductDetailsScreen extends StatelessWidget {
         leading: IconButton(
             onPressed: () => Navigator.pop(context),
             icon: Icon(
+                Icons.arrow_back,
             )
         title: Text(
           "Details"
