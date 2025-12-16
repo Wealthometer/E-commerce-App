@@ -54,6 +54,6 @@ class ProductDetailsScreen extends StatelessWidget {
       String productName,
       String description
   )async{
-    /
+    
   }
 }
