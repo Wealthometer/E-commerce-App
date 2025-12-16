@@ -14,6 +14,7 @@ class ProductDetailsScreen extends StatelessWidget {
     final screenSize = MediaQuery.of(context).size;
     final screenHeight = screenSize.height;
     final screenWidth = screenSize.width;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
 
 
     return Scaffold(
