@@ -81,6 +81,7 @@ class ProductDetailsScreen extends StatelessWidget {
 
       if (result.status == ShareResultStatus.success) {
         debugPrint(
+            'Thank you for Sharing'
         );
       }
   }
