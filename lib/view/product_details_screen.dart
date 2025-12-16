@@ -74,6 +74,7 @@ class ProductDetailsScreen extends StatelessWidget {
 
     try {
       final ShareResult result = await Share.share(
+          shareMessage,
       );
   }
 }
