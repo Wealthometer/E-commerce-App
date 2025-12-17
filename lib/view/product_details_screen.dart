@@ -92,6 +92,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     children: [
                       Expanded(
                           child: Text(
+                            product.name,
             )
           ],
         ),
