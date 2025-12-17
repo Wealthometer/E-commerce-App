@@ -187,6 +187,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           style: AppTextStyle.withColor(
                               AppTextStyle.bodyMedium,
                               Theme.of(context).textTheme.bodyLarge!.color!
+                          )
     );
   }
 
