@@ -152,6 +152,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   Text(
                     product.description,
                     style: AppTextStyle.withColor(
+                        AppTextStyle.bodySmall,
             )
           ],
         ),
