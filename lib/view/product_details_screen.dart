@@ -144,6 +144,7 @@ class ProductDetailsScreen extends StatelessWidget {
                       Theme.of(context).textTheme.headlineMedium!.color!,
                     ),
                   ),
+
             )
           ],
         ),
