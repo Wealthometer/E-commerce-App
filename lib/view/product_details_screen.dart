@@ -206,6 +206,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           backgroundColor: Theme.of(context).primaryColor,
                           side: BorderSide(
                               color: isDark ? Colors.white70 : Colors.black87
+                          )
     );
   }
 
