@@ -141,6 +141,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     'Description',
                     style: AppTextStyle.withColor(
                       AppTextStyle.labelMedium,
+                      Theme.of(context).textTheme.headlineMedium!.color!,
             )
           ],
         ),
