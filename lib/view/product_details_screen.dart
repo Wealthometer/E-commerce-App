@@ -165,6 +165,7 @@ class ProductDetailsScreen extends StatelessWidget {
 
       //buttons
       bottomNavigationBar: SafeArea(
+          child: Padding(
     );
   }
 
