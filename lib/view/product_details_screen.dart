@@ -121,6 +121,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     height: screenWidth * 0.02,
                   ),
                   Text(
+                    'Select Size',
             )
           ],
         ),
