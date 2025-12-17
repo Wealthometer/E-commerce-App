@@ -191,6 +191,7 @@ class ProductDetailsScreen extends StatelessWidget {
                         ),
                     )
                 ),
+
     );
   }
 
