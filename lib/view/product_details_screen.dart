@@ -134,6 +134,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   const SizeSelector(),
 
                   SizedBox(
+                    height: screenWidth * 0.04,
             )
           ],
         ),
