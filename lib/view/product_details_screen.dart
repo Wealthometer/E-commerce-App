@@ -97,6 +97,7 @@ class ProductDetailsScreen extends StatelessWidget {
                               AppTextStyle.h2,
                               Theme.of(context).textTheme.headlineMedium!.color!,
                             ),
+                          )
             )
           ],
         ),
