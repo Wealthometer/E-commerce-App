@@ -154,6 +154,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     style: AppTextStyle.withColor(
                         AppTextStyle.bodySmall,
                         isDark ? Colors.grey[400]! : Colors.grey[600]!
+                    ),
             )
           ],
         ),
