@@ -150,6 +150,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
 
                   Text(
+                    product.description,
             )
           ],
         ),
