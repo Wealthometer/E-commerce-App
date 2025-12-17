@@ -186,6 +186,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           "Add to cart",
                           style: AppTextStyle.withColor(
                               AppTextStyle.bodyMedium,
+                              Theme.of(context).textTheme.bodyLarge!.color!
     );
   }
 
