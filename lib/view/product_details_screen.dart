@@ -76,6 +76,7 @@ class ProductDetailsScreen extends StatelessWidget {
                               ? Theme.of(context).primaryColor
                               : (isDark ? Colors.white : Colors.black),
                         ),
+                    ),
                 )
               ],
             )
