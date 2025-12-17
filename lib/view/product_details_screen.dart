@@ -182,6 +182,7 @@ class ProductDetailsScreen extends StatelessWidget {
                             color: isDark ? Colors.white70 : Colors.black87
                           )
                         ),
+                        child: Text(
     );
   }
 
