@@ -183,6 +183,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           )
                         ),
                         child: Text(
+                          "Add to cart",
     );
   }
 
