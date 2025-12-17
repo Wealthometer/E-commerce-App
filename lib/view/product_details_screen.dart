@@ -204,6 +204,7 @@ class ProductDetailsScreen extends StatelessWidget {
                               vertical: screenHeight * 0.02
                           ),
                           backgroundColor: Theme.of(context).primaryColor,
+                          side: BorderSide(
     );
   }
 
