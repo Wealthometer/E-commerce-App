@@ -143,6 +143,7 @@ class ProductDetailsScreen extends StatelessWidget {
                       AppTextStyle.labelMedium,
                       Theme.of(context).textTheme.headlineMedium!.color!,
                     ),
+                  ),
             )
           ],
         ),
