@@ -65,6 +65,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 ),
 
                 //favorite button
+                Positioned(
                 )
               ],
             )
