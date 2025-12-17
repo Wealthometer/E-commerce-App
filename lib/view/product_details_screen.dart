@@ -115,6 +115,7 @@ class ProductDetailsScreen extends StatelessWidget {
                       AppTextStyle.bodyMedium,
                       isDark ? Colors.grey[400]! : Colors.grey[600]!
                     ),
+                  ),
             )
           ],
         ),
