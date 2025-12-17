@@ -175,6 +175,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     child: OutlinedButton(
                         onPressed: (){},
                         style: OutlinedButton.styleFrom(
+                          padding: EdgeInsets.symmetric(
     );
   }
 
