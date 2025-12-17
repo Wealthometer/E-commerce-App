@@ -170,6 +170,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 screenWidth * 0.04,
               ),
             child: Row(
+              children: [
     );
   }
 
