@@ -94,6 +94,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           child: Text(
                             product.name,
                             style: AppTextStyle.withColor(
+                              AppTextStyle.h2,
             )
           ],
         ),
