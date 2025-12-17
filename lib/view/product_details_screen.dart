@@ -128,6 +128,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
+                    height: screenWidth * 0.01,
             )
           ],
         ),
