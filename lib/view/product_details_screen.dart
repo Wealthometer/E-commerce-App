@@ -74,6 +74,7 @@ class ProductDetailsScreen extends StatelessWidget {
                               : Icons.favorite_border,
                           color: product.isFavorite
                               ? Theme.of(context).primaryColor
+                              : (isDark ? Colors.white : Colors.black),
                 )
               ],
             )
