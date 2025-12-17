@@ -207,6 +207,20 @@ class ProductDetailsScreen extends StatelessWidget {
                           side: BorderSide(
                               color: isDark ? Colors.white70 : Colors.black87
                           )
+                      ),
+                      child: Text(
+                          "Add to cart",
+                          style: AppTextStyle.withColor(
+                              AppTextStyle.bodyMedium,
+                              Colors.white
+                          )
+                      ),
+                    )
+                ),
+              ],
+            ),
+          )
+      ),
     );
   }
 
