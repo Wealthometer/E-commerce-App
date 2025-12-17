@@ -132,6 +132,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
 
                   const SizeSelector(),
+
             )
           ],
         ),
