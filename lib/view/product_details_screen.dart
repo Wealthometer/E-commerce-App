@@ -133,6 +133,7 @@ class ProductDetailsScreen extends StatelessWidget {
 
                   const SizeSelector(),
 
+                  SizedBox(
             )
           ],
         ),
