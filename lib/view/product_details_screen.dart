@@ -180,6 +180,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           ),
                           side: BorderSide(
                             color: isDark ? Colors.white70 : Colors.black87
+                          )
     );
   }
 
