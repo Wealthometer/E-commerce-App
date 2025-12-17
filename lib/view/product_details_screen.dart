@@ -124,6 +124,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     'Select Size',
                     style: AppTextStyle.withColor(
                       AppTextStyle.labelMedium,
+                      Theme.of(context).textTheme.headlineMedium!.color!,
             )
           ],
         ),
