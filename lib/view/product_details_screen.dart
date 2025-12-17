@@ -93,6 +93,7 @@ class ProductDetailsScreen extends StatelessWidget {
                       Expanded(
                           child: Text(
                             product.name,
+                            style: AppTextStyle.withColor(
             )
           ],
         ),
