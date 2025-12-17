@@ -203,6 +203,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: screenHeight * 0.02
                           ),
+                          backgroundColor: Theme.of(context).primaryColor,
     );
   }
 
