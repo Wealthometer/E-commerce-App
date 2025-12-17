@@ -69,6 +69,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     child: IconButton(
                         onPressed: (){},
                         icon: Icon(
+                          product.isFavorite
                 )
               ],
             )
