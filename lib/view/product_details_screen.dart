@@ -84,6 +84,7 @@ class ProductDetailsScreen extends StatelessWidget {
             //product details
             Padding(
                 padding: EdgeInsets.all(screenWidth * 0.04),
+              child: Column(
             )
           ],
         ),
