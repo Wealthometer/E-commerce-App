@@ -82,6 +82,7 @@ class ProductDetailsScreen extends StatelessWidget {
             ),
 
             //product details
+            Padding(
             )
           ],
         ),
