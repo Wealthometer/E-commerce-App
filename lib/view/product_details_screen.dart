@@ -167,6 +167,7 @@ class ProductDetailsScreen extends StatelessWidget {
       bottomNavigationBar: SafeArea(
           child: Padding(
               padding: EdgeInsets.all(
+                screenWidth * 0.04,
     );
   }
 
