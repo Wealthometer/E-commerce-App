@@ -89,6 +89,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
             )
           ],
         ),
