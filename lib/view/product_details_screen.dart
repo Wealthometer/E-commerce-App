@@ -68,6 +68,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 Positioned(
                     child: IconButton(
                         onPressed: (){},
+                        icon: Icon(
                 )
               ],
             )
