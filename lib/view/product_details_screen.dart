@@ -173,6 +173,7 @@ class ProductDetailsScreen extends StatelessWidget {
               children: [
                 Expanded(
                     child: OutlinedButton(
+                        onPressed: (){},
     );
   }
 
