@@ -178,6 +178,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                             vertical: screenHeight * 0.02
                           ),
+                          side: BorderSide(
     );
   }
 
