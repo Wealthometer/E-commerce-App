@@ -188,6 +188,7 @@ class ProductDetailsScreen extends StatelessWidget {
                               AppTextStyle.bodyMedium,
                               Theme.of(context).textTheme.bodyLarge!.color!
                           )
+                        ),
     );
   }
 
