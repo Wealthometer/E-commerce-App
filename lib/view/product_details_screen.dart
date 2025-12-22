@@ -209,7 +209,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           )
                       ),
                       child: Text(
-                          "Add to cart",
+                          "Buy Now",
                           style: AppTextStyle.withColor(
                               AppTextStyle.bodyMedium,
                               Colors.white
