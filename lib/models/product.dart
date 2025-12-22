@@ -21,12 +21,12 @@ class Product {
 
 final List<Product> products = [
   const Product(
-    name: 'Shoes',
+    name: 'Nike AIR ✓',
     category: 'Footwear',
     price: 69.00,
     oldPrice: 149.00,
     imageUrl: 'assets/images/shoe.jpg',
-    description: 'This is a description of the product 1',
+    description: 'A nice footwear with good quality a lot of durability and has long lasting ability. Trust this product. You will love..!! it.',
   ),
   const Product(
     name: 'Laptop',
