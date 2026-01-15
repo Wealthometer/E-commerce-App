@@ -52,7 +52,7 @@ class AllProductsScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: AllProductGrid(),
+      body: AllProductGrid(allProducts: products),
     );
   }
 }
