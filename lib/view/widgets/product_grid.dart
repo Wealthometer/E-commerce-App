@@ -35,7 +35,7 @@ class ProductGrid extends StatelessWidget {
               product: product,
             ))
           ),
-          child: ProductCard(product: product),
+          child: AllProductCard(products: product),
         );
       }
     );
