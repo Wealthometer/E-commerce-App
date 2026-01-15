@@ -135,12 +135,9 @@ class ProductDetailsScreen extends StatelessWidget {
                     SizedBox(
                       height: screenWidth * 0.01,
                     ),
-                  ),
-                  SizedBox(
-                    height: screenWidth * 0.01,
-                  ),
 
-                  const SizeSelector(),
+                  if (product.category.toLowerCase() != 'electronics')
+                    const SizeSelector(),
 
                   SizedBox(
                     height: screenWidth * 0.04,
