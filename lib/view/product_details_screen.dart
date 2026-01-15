@@ -10,7 +10,7 @@ import 'package:share_plus/share_plus.dart';
 import '../models/allproduct.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
-  final Product product;
+  final AllProduct product;
   const ProductDetailsScreen({super.key, required this.product});
 
   @override
