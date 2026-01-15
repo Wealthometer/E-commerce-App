@@ -30,7 +30,7 @@ class AllProductGrid extends StatelessWidget {
               builder: (context) => ProductDetailsScreen(product: product),
             ),
           ),
-          child: AllProductCard(products: products),
+          child: AllProductCard(products: product),
         );
       }
     );
