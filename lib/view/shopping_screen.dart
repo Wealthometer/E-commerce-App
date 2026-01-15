@@ -29,6 +29,35 @@ class ShoppingScreen extends StatelessWidget {
             isDark ? Colors.white : Colors.black
           ),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.search_outlined,
+              color: isDark ? Colors.white : Colors.black,
+            ),
+          ),
+          IconButton(
+            onPressed: () => FilterBottomSheet.show(context),
+            icon: Icon(
+              Icons.filter_list,
+              color: isDark ? Colors.white : Colors.black,
+            ),
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.only(
+                top: 16
+            ),
+            child: CategoryChips(),
+          ),
+          Expanded(
+              child: AllProductGrid(allProducts: allProduct),
+          )
+        ],
       ),
     );
   }
