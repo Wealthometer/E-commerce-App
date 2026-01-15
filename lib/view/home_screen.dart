@@ -8,7 +8,7 @@ import 'package:ecommerce_app_ui/view/widgets/category_chips.dart';
 import 'package:ecommerce_app_ui/view/widgets/custom_search_bar.dart';
 import 'package:ecommerce_app_ui/view/widgets/product_grid.dart';
 import 'package:ecommerce_app_ui/view/widgets/sale_banner.dart';
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
