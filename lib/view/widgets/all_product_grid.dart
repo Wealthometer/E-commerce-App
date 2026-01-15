@@ -20,7 +20,7 @@ class AllProductGrid extends StatelessWidget {
         crossAxisSpacing: 16,
         mainAxisSpacing: 16
       ),
-      itemCount: allProduct.length,
+      itemCount: allProducts.length,
       itemBuilder: (context, index){
         final products = allProduct[index];
         return GestureDetector(
