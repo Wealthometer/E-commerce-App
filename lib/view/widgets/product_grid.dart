@@ -14,6 +14,9 @@ class ProductGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Limit products if specified
+    final displayProducts = limit != null ? products.take(limit!).toList() : products;
+    
     return GridView.builder(
       padding: const EdgeInsets.all(16),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
