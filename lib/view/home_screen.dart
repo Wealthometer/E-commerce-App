@@ -1,6 +1,9 @@
 import 'package:ecommerce_app_ui/controllers/theme_controller.dart';
 import 'package:ecommerce_app_ui/models/allproduct.dart';
+// import 'package:ecommerce_app_ui/models/product.dart';
 import 'package:ecommerce_app_ui/view/all_products_screen.dart';
+import 'package:ecommerce_app_ui/view/cart_screen.dart';
+// import 'package:ecommerce_app_ui/view/product_details_screen.dart';
 import 'package:ecommerce_app_ui/view/widgets/category_chips.dart';
 import 'package:ecommerce_app_ui/view/widgets/custom_search_bar.dart';
 import 'package:ecommerce_app_ui/view/widgets/product_grid.dart';
