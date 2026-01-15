@@ -122,11 +122,18 @@ class ProductDetailsScreen extends StatelessWidget {
                   SizedBox(
                     height: screenWidth * 0.02,
                   ),
-                  Text(
-                    'Select Size',
-                    style: AppTextStyle.withColor(
-                      AppTextStyle.labelMedium,
-                      Theme.of(context).textTheme.headlineMedium!.color!,
+                  if (product.category.toLowerCase() != 'electronics')
+                    Text(
+                      'Select Size',
+                      style: AppTextStyle.withColor(
+                        AppTextStyle.labelMedium,
+                        Theme.of(context).textTheme.headlineMedium!.color!,
+                      ),
+                    ),
+
+                  if (product.category.toLowerCase() != 'electronics')
+                    SizedBox(
+                      height: screenWidth * 0.01,
                     ),
                   ),
                   SizedBox(
