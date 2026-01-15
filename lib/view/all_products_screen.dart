@@ -11,7 +11,9 @@ import 'package:get/get.dart';
 // import 'package:share_plus/share_plus.dart';
 
 class AllProductsScreen extends StatelessWidget {
-  const AllProductsScreen({super.key, required AllProduct products});
+  final List<AllProduct> products;
+  
+  const AllProductsScreen({super.key, required this.products});
 
   @override
   Widget build(BuildContext context) {
