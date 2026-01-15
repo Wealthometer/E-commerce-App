@@ -22,11 +22,11 @@ class AllProductsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-            onPressed: () => Get.back(),
-            icon: Icon(
-                Icons.arrow_back_ios_new,
-              color: isDark ? Colors.white : Colors.black,
-            )
+          onPressed: () => Get.back(),
+          icon: Icon(
+            Icons.arrow_back_ios_new,
+            color: isDark ? Colors.white : Colors.black,
+          ),
         ),
         title: Text(
           'All Products',
