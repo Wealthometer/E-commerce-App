@@ -1,7 +1,7 @@
 import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 class CustomTextfield extends StatefulWidget {
   final String label;
