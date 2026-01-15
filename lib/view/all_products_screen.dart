@@ -32,7 +32,7 @@ class AllProductsScreen extends StatelessWidget {
           'All Products',
           style: AppTextStyle.withColor(
             AppTextStyle.h2,
-            isDark ? Colors.white : Colors.black
+            isDark ? Colors.white : Colors.black,
           ),
         ),
         actions: [
