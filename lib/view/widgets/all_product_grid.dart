@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class AllProductGrid extends StatelessWidget {
-  const AllProductGrid({super.key});
+  final List<AllProduct> allProducts;
+  
+  const AllProductGrid({super.key, required this.allProducts});
 
   @override
   Widget build(BuildContext context) {
