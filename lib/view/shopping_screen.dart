@@ -22,8 +22,12 @@ class ShoppingScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        title: const Text(
-            'Shopping Screen'
+        title: Text(
+            'Shopping',
+          style: AppTextStyle.withColor(
+            AppTextStyle.h3,
+            isDark ? Colors.white : Colors.black
+          ),
         ),
       ),
     );
