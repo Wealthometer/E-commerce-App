@@ -51,7 +51,7 @@ class SaleBanner extends StatelessWidget {
           ),
 
           ElevatedButton(
-            onPressed: (){},
+            onPressed: ()=> Get.to(()=> ShoppingScreen()),
             child: Text(
               'Shop Now',
               style: AppTextStyle.buttonMedium,
