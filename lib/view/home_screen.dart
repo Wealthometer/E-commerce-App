@@ -60,9 +60,7 @@ class HomeScreen extends StatelessWidget {
                   Spacer(),
 
                   IconButton(
-                      onPressed: (){
-
-                      },
+                      onPressed: (){},
                       icon: Icon(
                         Icons.notifications_outlined
                       )
