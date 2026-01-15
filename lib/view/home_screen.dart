@@ -67,9 +67,7 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   IconButton(
-                      onPressed: (){
-
-                      },
+                      onPressed: () => Get.to(() => CartScreen()),
                       icon: Icon(
                           Icons.shopping_bag_outlined
                       )
