@@ -14,6 +14,8 @@ class _SizeSelectorState extends State<SizeSelector> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    
     return Row(
       children: List.generate(
         sizes.length,
@@ -33,7 +35,9 @@ class _SizeSelectorState extends State<SizeSelector> {
                 },
               selectedColor: Theme.of(context).primaryColor,
               labelStyle: TextStyle(
-                color: selectedSize == index ? Colors.white : Colors.black
+                color: selectedSize == index 
+                  ? Colors.white 
+                  : (isDark ? Colors.white : Colors.black)
               ),
             ),
           )
