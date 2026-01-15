@@ -37,13 +37,11 @@ class AllProductsScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-              onPressed: (){},
-              icon: Icon(
-                  Icons.search_outlined,
-                color: isDark ? Colors.white : Colors.black,
-                weight: 300,
-                size: 28,
-              )
+            onPressed: () {},
+            icon: Icon(
+              Icons.search_outlined,
+              color: isDark ? Colors.white : Colors.black,
+            ),
           ),
 
           //filter button
