@@ -1,5 +1,5 @@
 import 'package:ecommerce_app_ui/models/allproduct.dart';
-import 'package:ecommerce_app_ui/models/product.dart';
+// import 'package:ecommerce_app_ui/models/product.dart';
 import 'package:ecommerce_app_ui/utils/app_textstyles.dart';
 import 'package:ecommerce_app_ui/view/widgets/all_product_grid.dart';
 import 'package:ecommerce_app_ui/view/widgets/filter_bottom_sheet.dart';
