@@ -43,8 +43,6 @@ class AllProductsScreen extends StatelessWidget {
               color: isDark ? Colors.white : Colors.black,
             ),
           ),
-
-          //filter button
           IconButton(
               onPressed: () => FilterBottomSheet.show(context),
               icon: Icon(
