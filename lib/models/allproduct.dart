@@ -20,7 +20,7 @@ class AllProduct {
 
 final List<AllProduct> allProduct = [
   const AllProduct(
-    name: 'Shoes',
+    name: 'Nike AIR ✓',
     category: 'Footwear',
     price: 69.00,
     oldPrice: 149.00,
