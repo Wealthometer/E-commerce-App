@@ -24,11 +24,11 @@ class AllProductGrid extends StatelessWidget {
       itemBuilder: (context, index){
         final product = allProducts[index];
         return GestureDetector(
-          onTap: ()=> Navigator.push(
-              context,
-            MaterialPageRoute(builder: (context) => AllProductsScreen(
-              products: products,
-            ))
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ProductDetailsScreen(product: product),
+            ),
           ),
           child: AllProductCard(products: products),
         );
