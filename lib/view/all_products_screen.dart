@@ -36,7 +36,6 @@ class AllProductsScreen extends StatelessWidget {
           ),
         ),
         actions: [
-          //search icon
           IconButton(
               onPressed: (){},
               icon: Icon(
