@@ -7,7 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class ProductGrid extends StatelessWidget {
-  const ProductGrid({super.key});
+  final List<AllProduct> products;
+  final int? limit;  // Add this
+  
+  const ProductGrid({super.key, required this.products, this.limit});
 
   @override
   Widget build(BuildContext context) {
