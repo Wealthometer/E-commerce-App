@@ -44,13 +44,11 @@ class AllProductsScreen extends StatelessWidget {
             ),
           ),
           IconButton(
-              onPressed: () => FilterBottomSheet.show(context),
-              icon: Icon(
-                Icons.filter_list,
-                color: isDark ? Colors.white : Colors.black,
-                weight: 300,
-                size: 28,
-              )
+            onPressed: () => FilterBottomSheet.show(context),
+            icon: Icon(
+              Icons.filter_list,
+              color: isDark ? Colors.white : Colors.black,
+            ),
           ),
         ],
       ),
