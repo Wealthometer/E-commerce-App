@@ -15,7 +15,8 @@ class CartScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
+        leading:
+        xIconButton(
             onPressed: () => Get.back(),
             icon: Icon(
                 Icons.arrow_back_ios
