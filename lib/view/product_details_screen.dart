@@ -7,6 +7,8 @@ import 'package:flutter/widgets.dart';
 // import 'package:get/get.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../models/allproduct.dart';
+
 class ProductDetailsScreen extends StatelessWidget {
   final Product product;
   const ProductDetailsScreen({super.key, required this.product});
