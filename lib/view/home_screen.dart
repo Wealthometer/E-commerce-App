@@ -120,15 +120,15 @@ class HomeScreen extends StatelessWidget {
                     child: Text(
                       'See All',
                       style: TextStyle(
-                        color: Theme.of(context).primaryColor
+                        color: Theme.of(context).primaryColor,
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
-            
-            Expanded(child: ProductGrid()),
+
+            Expanded(child: ProductGrid(products: allProduct, limit: 5)),
           ],
         ),
       ),
