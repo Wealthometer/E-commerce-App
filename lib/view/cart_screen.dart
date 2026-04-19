@@ -16,7 +16,7 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading:
-        xIconButton(
+        IconButton(
             onPressed: () => Get.back(),
             icon: Icon(
                 Icons.arrow_back_ios
@@ -83,7 +83,65 @@ class CartScreen extends StatelessWidget {
               height: 100,
               fit: BoxFit.cover,
             ),
-          )
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                          child: Text(
+                            product.name,
+                            style: AppTextStyle.withColor(
+                              AppTextStyle.bodyLarge,
+                              Theme.of(context).textTheme.bodyLarge!.color!,
+                            ),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.delete_outline,
+                          color: Colors.red[400],
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 8,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        '\$${product.price}',
+                        style: AppTextStyle.withColor(
+                          AppTextStyle.h3,
+                          Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).primaryColor.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Row(
+                          children: [
+                            Ico
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              )
+            ),
+          ),
         ],
       ),
     );
