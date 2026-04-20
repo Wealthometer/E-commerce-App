@@ -20,7 +20,7 @@ class SplashScreen extends StatelessWidget {
       } else if (authController.isLoggedIn) {
         Get.off(() => const MainScreen());
       } else {
-        Get.off(() => OnboardingScreen());
+        Get.off(() => SigninScreen());
       }
     });
 
