@@ -132,7 +132,29 @@ class CartScreen extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            Ico
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.remove,
+                                size: 20,
+                                color: Theme.of(context).primaryColor,
+                              ),
+                            ),
+                            Text(
+                              '1',
+                              style: AppTextStyle.withColor(
+                                AppTextStyle.h3,
+                                Theme.of(context).primaryColor,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.add,
+                                size: 20,
+                                color: Theme.of(context).primaryColor,
+                              ),
+                            ),
                           ],
                         ),
                       ),
