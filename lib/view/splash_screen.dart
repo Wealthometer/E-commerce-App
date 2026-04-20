@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_ui/controllers/auth_controller.dart';
+import 'package:ecommerce_app_ui/view/main_screen.dart';
 // import 'package:ecommerce_app_ui/view/main_screen.dart';
 import 'package:ecommerce_app_ui/view/onboarding_screen.dart';
 // import 'package:ecommerce_app_ui/view/signin_screen.dart';
