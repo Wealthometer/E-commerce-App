@@ -18,7 +18,7 @@ class SplashScreen extends StatelessWidget {
       if (authController.isFirstTime) {
         Get.off(() => const OnboardingScreen());
       } else if (authController.isLoggedIn) {
-        Get.off(() => const OnboardingScreen());
+        Get.off(() => const MainScreen());
       } else {
         Get.off(() => OnboardingScreen());
       }
