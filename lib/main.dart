@@ -6,7 +6,7 @@ import 'package:ecommerce_app_ui/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
+ 
 void main() async {
   await GetStorage.init();
   Get.put(ThemeController());
